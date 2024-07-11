@@ -56,3 +56,31 @@ Step 4 (optional): if you need to run multi-view feature fusion with OpenSeg (es
 pip install tensorflow
 ```
 
+## Data Preparation
+
+We provide the **pre-processed 3D&2D data** and **multi-view fused features** for the following datasets:
+- ScanNet
+- Matterport3D
+- nuScenes
+- Replica
+### Pre-processed 3D&2D Data
+One can download the pre-processed datasets by running the script below, and following the command line instruction to download the corresponding datasets:
+```bash
+bash scripts/download_dataset.sh
+```
+The script will download and unpack data into the folder `data/`. One can also download the dataset somewhere else, but link to the corresponding folder with the symbolic link:
+```bash
+ln -s /PATH/TO/DOWNLOADED/FOLDER data
+```
+
+**Note**: 2D processed datasets (e.g. `scannet_2d`) are only needed if you want to do multi-view feature fusion on your own. If so, please follow the [instruction for multi-view fusion](./scripts/feature_fusion/README.md).
+
+### Multi-view Fused Features
+
+You can run the following to directly download provided fused features:
+
+```bash
+bash scripts/download_fused_features.sh
+```
+
+### Pre-processed superpoint Data
