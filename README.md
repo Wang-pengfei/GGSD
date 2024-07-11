@@ -84,3 +84,24 @@ bash scripts/download_fused_features.sh
 ```
 
 ### Pre-processed superpoint Data
+will released
+
+
+## Run
+When you have installed the environment and obtained the **processed 3D data** and **multi-view fused features**, you are ready to run our OpenScene disilled/ensemble model for 3D semantic segmentation, or distill your own model from scratch.
+
+### Distillation
+- Start distilling:
+```sh run/distill.sh EXP_NAME CONFIG.yaml```
+
+### Evaluation
+```bash
+# Run 3D distilled model
+sh run/eval.sh out/replica_openseg config/replica/ours_openseg_pretrained.yaml distill
+```
+
+## Acknowledgement
+We build our code on top of the [OpenScene repository]([https://github.com/wbhu/BPNet](https://github.com/pengsongyou/openscene)).
+
+
+
