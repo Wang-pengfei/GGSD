@@ -14,7 +14,7 @@ cd GGSD
 First of all, you have to make sure that you have all dependencies in place.
 The simplest way to do so, is to use [anaconda](https://www.anaconda.com/). 
 
-You can create an anaconda environment called `openscene` as below. For linux, you need to install `libopenexr-dev` before creating the environment.
+You can create an anaconda environment called `GGSD` as below. For linux, you need to install `libopenexr-dev` before creating the environment.
 
 ```bash
 sudo apt-get install libopenexr-dev # for linux
