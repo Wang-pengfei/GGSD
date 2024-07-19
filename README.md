@@ -1,6 +1,10 @@
 # GGSD
 Official PyTorch codes for "Open Vocabulary 3D Scene Understanding via Geometry Guided Self-Distillation", ECCV2024
 
+## Note！！
+Please note that the code has not been fully organized yet. The current code cannot be executed directly. I will remove this note once I have finished organizing it.
+
+
 
 ## Installation
 Our code is based on [OpenScene](https://github.com/pengsongyou/openscene/blob/main/installation.md), and you can install the environment according to OpenScene or the following commands.
